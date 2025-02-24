@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale= 1.0">
+     <title> THE GENTLES GROUP OF COMPANIES</title>
+	 <link rel="stylesheet" href="style.css">
+	 
+	<!---------- <link rel="preconnect" href="https://fonts.googleapis.com">-------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+ rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+     
+</head>
+<body>
+    <section class="sub-header">
+	<nav>
+	  <div class="logo-container">
+	   <a href="index.html"><img src="Images/Gem_logo1.png" alt= "logo" class="logo"></a>
+	   </div>
+	   <div class="nav-links" id="navLinks">
+	   
+	    <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i class="fa fa-times" onclick="hideMenu()" ></i>
+	      
+	   <!--- Navigate Menu----->
+	   <nav id="nav-menu">
+	   
+	   <!----bar icons---->
+	   <!--<i class="fa fa-bars" id="nav-toggle" onclick="toggleMenu()"></i>-->
+	   
+	   <!----close button-->
+	   <!--<i class="fa fa-times" id="nav-close" onclick="toggleMenu()"></i>-->
+	  
+	     <ul id="nav-items">
+		     <li><a href="index.html">HOME</a></li>
+			 <li><a href="about.html">ABOUT</a></li>
+			 <li> <a href="services.html">SERVICES</a></li>
+			 <li><a href="contact.html">CONTACT</a></li>
+			 <li><a href="blog.html">BLOG</a></li>
+			 <li><a href="faq.html">FAQ</a></li>
+		 </ul>
+		  </nav>
+	   <!--</div>-->
+	   
+	   <!---<i class="fa fa-bars" onclick="showMenu()"></i>--->
+	   
+	   </nav>
+	   <h1>Our Services</h1>
+	   </section>
+	   
+	  
+	  <section class="services">
+	  <h1>Services we offer</h1>
+   <p> we offer our clients with products services. we priortise your needs:</p>
+ 
+   
+    
+	<div class="row">
+	 <div class="services-col">
+	 <h3>Yoghurt restaurant</h3>
+<p>A high quality, and<br> delicious yoghurt with different<br> 
+flavouring taste. <b>"Dame Tu cosita" :</b><br><b>Give that little thing of yours</b></p>
+</div>
+	 
+	 <div class="services-col">
+	 <h3>The Gentles Radio</h3>
+  <p>listen to your fave sport & worship <br>we are Active,<br>Massive, and Current
+   <br>The Gentles Radio</p>
+</div>
+
+<div class="services-col">
+	 <h3>Beryl's Shito</h3>
+<p>A mouth watering Beryls <br>shito for all <br>
+	your Ghanaian dishes</p>
+</div>
+
+<div class="services-col">
+	 <h3>Mr. Gentle Fruit juices</h3>
+<p>Your health, our concern.<br> we give the best</p>
+ </div>
+
+<div class="services-col">
+	 <h3>Mr. Gentle Mineral water</h3>
+<p>Dont just drink any water,<br> go for Mr. Gentles <br>
+mineral water</p>
+</div>
+</div>
+
+</section>	
+
+
+<!-------Facilities------>
+
+<section class="facilities">
+<h1>our facilities</h1>
+<p>A beautiful and refreshing facilities at our disposal</p>
+
+<div class="row">
+<div class="facilities-col">
+     <img src="Images/swim.png">
+	 <h3>SSY pool</h3>
+	 <p> A cool refreshing pool side</p>
+</div>
+<div class="facilities-col">
+     <img src="Images/genSt.png">
+	 <h3>The Gentle Studio</h3>
+	 <p>we are Active, Massive, and Current</p>
+</div>
+<div class="facilities-col">
+     <img src="Images/bab.png">
+	 <h3>The Gentle Program</h3>
+	 <p>An interview with the <b>CEO</b></p>
+</div>
+</div>
+
+<div class="facilities-col">
+	 <video width="840" height="680" controls>
+	 <source src="Videos/SSY-Dame.mp4" type="Video/mp4">
+	 your browser does not support the video tag.
+	 </video>
+	 <h3>Sound Splash Yoghurt Restaurant</h3>
+	 <p><em>Dame Tu Cosita : <b>Give Me That Lil Thing of Yours</b></p></em>
+</div>
+</section>
+
+<!------ Footer---->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Gentle Group of Companies is a diversified conglomerate
+ <br>with interests in various sectors, including manufacturing,<br> 
+ logistics, education, and real estate.</p>
+
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkenIn"></i>
+</div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+	   
+	   
+	   
+	 <!--------javascript for toggle menu------->
+	   
+	<script>   
+	      /*var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+		  navLinks.style.right="0px";  
+		  }
+	
+	function hideMenu(){
+		  navLinks.style.right="-200";  
+		  }*/
+		  	  // Toggle Menu Function
+function toggleMenu() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('toggle');
+}
+
+	</script>
+	   
+	   <script>
+	   
+	   // Get the chat input and send button elements
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+
+// Get the chat messages container
+const chatMessages = document.querySelector('.chat-messages');
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', () => {
+  // Get the user's message
+  const message = chatInput.value.trim();
+  
+  // Check if the message is not empty
+  if (message !== '') {
+    // Create a new message element
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+
+    // Create a new username element
+    const usernameElement = document.createElement('span');
+    usernameElement.classList.add('username');
+    usernameElement.textContent = 'You';
+
+    // Create a new message text element
+    const messageTextElement = document.createElement('span');
+    messageTextElement.classList.add('message-text');
+    messageTextElement.textContent = message;
+
+    // Append the username and message text elements to the message element
+    messageElement.appendChild(usernameElement);
+    messageElement.appendChild(messageTextElement);
+
+    // Append the message element to the chat messages container
+    chatMessages.appendChild(messageElement);
+    // Clear the chat input field
+    chatInput.value = '';
+
+    // Scroll to the bottom of the chat messages container
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
+
+
+	   
+	   
+	   </script>
+	
+	   
+	    
+	   
+</body>
+</html>
+

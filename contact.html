@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale= 1.0">
+     <title> THE GENTLES GROUP OF COMPANIES</title>
+	 <link rel="stylesheet" href="style.css">
+	 
+	<!---------- <link rel="preconnect" href="https://fonts.googleapis.com">-------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+ rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+     
+</head>
+<body>
+    <section class="sub-header">
+	<nav>
+	   <div class="logo-container">
+	   <a href="index.html"><img src="Images/Gem_logo1.png" alt= "logo" class="logo"></a>
+	   </div>
+	  <div class="nav-links" id="navLinks">
+	   
+	    <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i class="fa fa-times" onclick="hideMenu()" ></i>
+	      
+	   <!--- Navigate Menu----->
+	   <nav id="nav-menu">
+	   
+	   <!----bar icons---->
+	  <!-- <i class="fa fa-bars" id="nav-toggle" onclick="toggleMenu()"></i>-->
+	   
+	   <!----close button-->
+	  <!-- <i class="fa fa-times" id="nav-close" onclick="toggleMenu()"></i>-->
+	  
+	    <!-- <ul id="nav-items">-->
+		 <ul id="nav-menu">
+		     <li><a href="index.html">HOME</a></li>
+			 <li><a href="about.html">ABOUT</a></li>
+			 <li> <a href="services.html">SERVICES</a></li>
+			 <li><a href="contact.html">CONTACT</a></li>
+			 <li><a href="blog.html">BLOG</a></li>
+			 <li><a href="faq.html">FAQ</a></li>
+		 </ul>
+		  </nav>
+	   <!--</div>-->
+	   
+	 
+	    </nav>
+	  
+	   <h1>Contact US</h1>
+	   </section>
+	   
+	   <!-------- contact us------->
+	   
+	  <section class= "location">
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.
+	  35196272633!2d-73.97950600000001!3d40.697141499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+	  1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!
+	  1sen!2sgh!4v1739787041692!5m2!1sen!2sgh" width="600" height="450" style="border:0;"allowfullscreen="" loading="lazy" 
+	  referrerpolicy="no-referrer-when-downgrade"></iframe>
+	   
+	  </section>
+	  
+	  <section class="contact-us">
+	  <div class="row"> 
+	  
+	  <div class="contact-col">
+	        <div>
+			<i class="fa fa-home"></i>
+			<span>
+			<h5>xyz Road,ABC Building</h5>
+			<p> New Jessy, East Brunswick,IN</p>
+			</span>
+			</div>
+			 <div>
+			 
+			<i class="fa fa-phone"></i>
+			<span>
+			<h5>+1 (347) 870 3441 / +(233) 546 387 466</h5>
+			<p> Monday to Saturday, 9Am to 6PM/p>
+			</span>
+			</div>
+			
+			 <div>
+			<i class="fa fa-envelope"></i>
+			<span>
+			<h5>Tggcompanies1984@gmail.com</h5>
+			<p> Email us your query</p>
+			</span>
+			</div>
+			</div>
+			
+	  <div class="contact-col">
+	    <form action="form-handler.php" method="post">
+		<input type="text" name="name" placeholder= "Enter your name" required>
+		<input type="Email" name="email" placeholder= "Enter Email Address" required>
+		<input type="text"  name="role"  placeholder= "Enter your role, eg. client" required>
+		<textarea row="8" name="message" placeholder="message" required></textarea>
+		<button type="submit" class="hero-btn red-btn" >Send message</button>
+		
+		</form>
+	  
+	  </div>
+	  
+	 </div>
+	  
+	  
+	  </section>
+	 
+
+
+
+<!------ Footer---->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Gentle Group of Companies is a diversified conglomerate
+ <br>with interests in various sectors, including manufacturing,<br> 
+ logistics, education, and real estate.</p>
+
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkedIn"></i>
+</div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+	   
+	   
+	   
+	 <!--------javascript for toggle menu------->
+	   
+	<script>   
+	      /*var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+		  navLinks.style.right="0px";  
+		  }
+	
+	function hideMenu(){
+		  navLinks.style.right="-200";  
+		  }*/
+		  
+		  	  // Toggle Menu Function
+function toggleMenu() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('toggle');
+}
+
+	</script>
+	   
+	   <script>
+	   
+	   // Get the chat input and send button elements
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+
+// Get the chat messages container
+const chatMessages = document.querySelector('.chat-messages');
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', () => {
+  // Get the user's message
+  const message = chatInput.value.trim();
+  
+  // Check if the message is not empty
+  if (message !== '') {
+    // Create a new message element
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+
+    // Create a new username element
+    const usernameElement = document.createElement('span');
+    usernameElement.classList.add('username');
+    usernameElement.textContent = 'You';
+
+    // Create a new message text element
+    const messageTextElement = document.createElement('span');
+    messageTextElement.classList.add('message-text');
+    messageTextElement.textContent = message;
+
+    // Append the username and message text elements to the message element
+    messageElement.appendChild(usernameElement);
+    messageElement.appendChild(messageTextElement);
+
+    // Append the message element to the chat messages container
+    chatMessages.appendChild(messageElement);
+    // Clear the chat input field
+    chatInput.value = '';
+
+    // Scroll to the bottom of the chat messages container
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
+
+
+	   
+	   
+	   </script>
+	
+	   
+	    
+	   
+</body>
+</html>
+

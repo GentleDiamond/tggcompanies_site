@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale= 1.0">
+     <title> THE GENTLES GROUP OF COMPANIES</title>
+	 <link rel="stylesheet" href="style.css">
+	 
+	<!---------- <link rel="preconnect" href="https://fonts.googleapis.com">-------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+ rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+     
+</head>
+<body>
+    <section class="sub-header">
+	<nav>
+	  <div class="logo-container">
+	   <a href="index.html"><img src="Images/Gem_logo1.png" alt= "logo" class="logo"></a>
+	   </div>
+	   <div class="nav-links" id="navLinks">
+	   
+	    <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i class="fa fa-times" onclick="hideMenu()" ></i>
+	   
+	     
+	   <!--- Navigate Menu----->
+	   <nav id="nav-menu">
+	   
+	   <!----bar icons---->
+	   <!--<i class="fa fa-bars" id="nav-toggle" onclick="toggleMenu()"></i>-->
+	   
+	   <!----close button-->
+	   <!--<i class="fa fa-times" id="nav-close" onclick="toggleMenu()"></i>-->
+	  
+	     <ul id="nav-items">
+		     <li><a href="index.html">HOME</a></li>
+			 <li><a href="about.html">ABOUT</a></li>
+			 <li> <a href="services.html">SERVICES</a></li>
+			 <li><a href="contact.html">CONTACT</a></li>
+			 <li><a href="blog.html">BLOG</a></li>
+			 <li><a href="faq.html">FAQ</a></li>
+		 </ul>
+		  </nav>
+	   <!--</div>--->
+	   
+	 
+	   
+	   </nav>
+	   <h1>Our Services & Friday Programs on The Gentles Radio & SSYR</h1>
+	   </section>
+	   
+	  <!---------blog page content----->
+	  
+	  <section class="blog-content">
+	    <div class="row">
+		<div class="blog-left">
+		<img src="Images/radio.jpg">
+		<h2>Our programs on The Gentles Radio</h2>
+		<p>A radio station is a broadcasting service that <br>transmits audio content, 
+		such as music</br>, news, talk shows, and other programs, to a wide<br> audience through 
+		the airwaves or online. Radio stations typically <br>operate on a specific frequency,
+		such as AM (amplitude modulation)<br> or FM (frequency modulation), and broadcast their 
+		<br>content to listeners within a certain geographic area.</p>
+		<br>
+		
+		<p><b>Radio stations can be categorized into different types, including:</p></b>
+		<p><b>1. Commercial radio stations</b>: These stations broadcast advertisements<br> and sponsored content
+		to generate revenue.</p>
+		<br>
+<p><b>2. Public radio stations:</b> These stations are funded by the government or public <br>donations 
+and broadcast a wide range of content, including news,<br> music, and educational programs.</p>
+<br>
+<p><b>3. Community radio stations:</b> These stations are operated by local communities <br>and often
+ broadcast content that is relevant to the local area,<br> such as news, music, and cultural programs.</p>
+ <br>
+<p><b>4. Online radio stations:<b> These stations broadcast their content<br> over the internet, allowing
+ listeners to access their programs from <br>anywhere in the world.</p>
+
+
+
+          <div class="comment-box">
+		  
+		  <h3> Leave a comment</h3>
+		  
+		  <form class="comment-form">
+		  <input type="text" placeholder="Enter Name">
+		  <input type="Email" placeholder="Enter Email">
+		  <textarea rows="5" placeholder="Your comment"></textarea>
+		  <button type="submit" class="hero-btn red-btn"> POST COMMENT</button>
+		  
+		  </form>
+		  </div>
+		</div>
+		
+		<!--<div class="blog-right">
+		<h3>Post Categories<h3>
+		</div>
+		
+		<div class="blog-right">
+		<div>
+		    <span>Sound Splash Yughurt</span>
+			<span>21</span>
+			</div>
+			
+		    <div>
+		    <span>The Gentles Radio</span>
+			<span>28</span>
+			</div>
+			
+			 <div>
+		    <span>Beryl's Shito</span>
+			<span>15</span>
+			</div>
+			
+			 <div>
+		    <span>Mr. G's Mineral Water</span>
+			<span>34</span>
+			</div>
+			
+			 <div>
+		    <span>Mr. G's Mango splash</span>
+			<span>23</span>
+			</div>-->
+		</div>
+	  </section>
+	
+
+
+
+<!------ Footer---->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Gentle Group of Companies is a diversified conglomerate
+ <br>with interests in various sectors, including manufacturing,<br> 
+ logistics, education, and real estate.</p>
+
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkenIn"></i>
+</div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+	   
+	   
+	   
+	 <!--------javascript for toggle menu------->
+	   
+	<script>   
+	      /*var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+		  navLinks.style.right="0px";  
+		  }
+	
+	function hideMenu(){
+		  navLinks.style.right="-200";  
+		  }*/
+		  	  // Toggle Menu Function
+function toggleMenu() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('toggle');
+}
+
+	</script>
+	   
+	   <script>
+	   
+	   // Get the chat input and send button elements
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+
+// Get the chat messages container
+const chatMessages = document.querySelector('.chat-messages');
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', () => {
+  // Get the user's message
+  const message = chatInput.value.trim();
+  
+  // Check if the message is not empty
+  if (message !== '') {
+    // Create a new message element
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+
+    // Create a new username element
+    const usernameElement = document.createElement('span');
+    usernameElement.classList.add('username');
+    usernameElement.textContent = 'You';
+
+    // Create a new message text element
+    const messageTextElement = document.createElement('span');
+    messageTextElement.classList.add('message-text');
+    messageTextElement.textContent = message;
+
+    // Append the username and message text elements to the message element
+    messageElement.appendChild(usernameElement);
+    messageElement.appendChild(messageTextElement);
+
+    // Append the message element to the chat messages container
+    chatMessages.appendChild(messageElement);
+    // Clear the chat input field
+    chatInput.value = '';
+
+    // Scroll to the bottom of the chat messages container
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
+
+
+	   
+	   
+	   </script>
+	
+	   
+	    
+	   
+</body>
+</html>
+

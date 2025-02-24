@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale= 1.0">
+     <title> THE GENTLES GROUP OF COMPANIES</title>
+	 <link rel="stylesheet" href="style.css">
+	 
+	<!---------- <link rel="preconnect" href="https://fonts.googleapis.com">-------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+ rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+     
+</head>
+<body>
+    <section class="sub-header">
+	<nav>
+	  <div class="logo-container">
+	   <a href="index.html"><img src="Images/Gem_logo1.png" alt= "logo" class="logo"></a>
+	   </div>
+	  <div class="nav-links" id="navLinks">
+	   
+	    <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i class="fa fa-times" onclick="hideMenu()" ></i>
+	      
+	   <!--- Navigate Menu----->
+	   <nav id="nav-menu">
+	   
+	   <!----bar icons---->
+	   <!--<i class="fa fa-bars" id="nav-toggle" onclick="toggleMenu()"></i>-->
+	   
+	   <!----close button-->
+	  <!-- <i class="fa fa-times" id="nav-close" onclick="toggleMenu()"></i>-->
+	  
+	     <ul id="nav-items">
+		     <li><a href="index.html">HOME</a></li>
+			 <li><a href="about.html">ABOUT</a></li>
+			 <li> <a href="services.html">SERVICES</a></li>
+			 <li><a href="contact.html">CONTACT</a></li>
+			 <li><a href="blog.html">BLOG</a></li>
+			 <li><a href="faq.html">FAQ</a></li>
+		 </ul>
+		  </nav>
+	   <!---</div>--->
+	   
+	   <!---<i class="fa fa-bars" onclick="showMenu()"></i>-->
+	   
+	   </nav>
+	   
+	   <!-- Search Bar -->
+<input type="search" id="faq-search" placeholder="Search FAQs">
+
+<!-- Filter Options -->
+<select id="faq-filter">
+  <option value="all">All</option>
+  <option value="general">General</option>
+  <option value="technical">Technical</option>
+  <option value="billing">Billing</option>
+</select>
+<!-- Collapse/Expand All Button -->
+<button id="faq-collapse-all">Collapse All</button>
+
+<!-- Printable Version Button -->
+<button id="faq-printable-version">Printable Version</button>
+<br></br>
+<br></br>
+
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+<!-- Live Chat Container -->
+<div class="live-chat-container">
+  <!-- Chat Header -->
+  <div class="chat-header">
+    <h2>Live Chat</h2>
+  </div>
+  <!-- Chat Messages -->
+  <div class="chat-messages">
+    <!-- Message -->
+    <div class="message">
+      <span class="username"></span>
+      <span class="message-text"></span>
+    </div>
+    <!-- ... -->
+  </div>
+  <!-- Chat Input -->
+  <div class="chat-input">
+    <input type="text" id="chat-input" placeholder="Type a message...">
+    <button id="send-button">Send</button>
+  </div>
+</div>
+
+  </section>
+  <br></br>
+   <br></br>
+    <br></br>
+
+<h1><!--<marquee>-->Frequently Ask Questions</h1><!---</marquee>-->
+
+	    <!-- FAQ Page Container -->
+	   
+<div class="faq-container">
+ 
+  <!-- FAQ Accordion -->
+  
+  <div class="faq-accordion">
+  
+    <!-- FAQ Question 1 -->
+    <div class="faq-question">
+      <h2>What is your return policy?</h2>
+      <div class="faq-answer">
+        <p>We give a negotiation returns to our clients.</p>
+      </div>
+    </div>
+	
+	 <!-- FAQ Question 2 -->
+    <div class="faq-question">
+      <h2>How do I track my order?</h2>
+      <div class="faq-answer">
+        <p>visit our tracking feature on your page</p>
+      </div>
+    </div>
+    
+    <!-- FAQ Question 3 -->
+    <div class="faq-question">
+      <h2>What is your shipping policy?</h2>
+      <div class="faq-answer">
+        <p>Payment before shipping, and shippment is done by air.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Accordion Container -->
+  <!----
+<div class="accordion-container">
+
+  <!-- Accordion Item -->
+  <!---<div class="accordion-item">
+    <h2>What is your return policy?</h2>
+    <div class="accordion-content">
+	 <p>The best to our customer expectation.</p>
+    </div>
+  </div>
+  <!-- ... -->
+<!---</div>------>
+</div>
+
+	
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+<!------ Footer---->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Gentle Group of Companies is a diversified conglomerate
+ <br>with interests in various sectors, including manufacturing,<br> 
+ logistics, education, and real estate.</p>
+
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkenIn"></i>
+</div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+	   
+	   
+	   
+	 <!--------javascript for toggle menu------->
+	   
+	<script>   
+	      /*var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+		  navLinks.style.right="0px";  
+		  }
+	
+	function hideMenu(){
+		  navLinks.style.right="-200";  
+		  }*/
+		  
+		  // Toggle Menu Function
+function toggleMenu() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('toggle');
+}
+
+	</script>
+	   
+	   <script>
+	   
+	   // Get the chat input and send button elements
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+
+// Get the chat messages container
+const chatMessages = document.querySelector('.chat-messages');
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', () => {
+  // Get the user's message
+  const message = chatInput.value.trim();
+  
+  // Check if the message is not empty
+  if (message !== '') {
+    // Create a new message element
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+
+    // Create a new username element
+    const usernameElement = document.createElement('span');
+    usernameElement.classList.add('username');
+    usernameElement.textContent = 'You';
+
+    // Create a new message text element
+    const messageTextElement = document.createElement('span');
+    messageTextElement.classList.add('message-text');
+    messageTextElement.textContent = message;
+
+    // Append the username and message text elements to the message element
+    messageElement.appendChild(usernameElement);
+    messageElement.appendChild(messageTextElement);
+
+    // Append the message element to the chat messages container
+    chatMessages.appendChild(messageElement);
+    // Clear the chat input field
+    chatInput.value = '';
+
+    // Scroll to the bottom of the chat messages container
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
+
+
+	   
+	   
+	   </script>
+	    
+	   
+</body>
+</html>
+

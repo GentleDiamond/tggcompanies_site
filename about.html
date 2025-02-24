@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale= 1.0">
+     <title>THE GENTLES GROUP OF COMPANIES</title>
+	 <link rel="stylesheet" href="style.css">
+	 
+	<!---------- <link rel="preconnect" href="https://fonts.googleapis.com">-------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+ rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+     
+</head>
+<body>
+    <section class="sub-header">
+	<nav>
+	   <div class="logo-container">
+	   <a href="index.html"><img src="Images/Gem_logo1.png" alt= "logo" class="logo"></a>
+	   </div>
+	  <div class="nav-links" id="navLinks">
+	   
+	    <i class="fa fa-bars" onclick="showMenu()"></i>
+	   <i class="fa fa-times" onclick="hideMenu()" ></i>
+	   
+	      
+	   <!--- Navigate Menu----->
+	   <nav id="nav-menu">
+	   
+	   <!----bar icons---->
+	   <!--<i class="fa fa-bars" id="nav-toggle" onclick="toggleMenu()"</i>-->
+	   
+	   <!----close button-->
+	   <!--<i class="fa fa-times" id="nav-close" onclick="toggleMenu()"></i>-->
+	  
+	     <ul id="nav-items">
+		     <li><a href="index.html">HOME</a></li>
+			 <li><a href="about.html">ABOUT</a></li>
+			 <li> <a href="services.html">SERVICES</a></li>
+			 <li><a href="contact.html">CONTACT</a></li>
+			 <li><a href="blog.html">BLOG</a></li>
+			 <li><a href="faq.html">FAQ</a></li>
+		 </ul>
+		  </nav>
+	   <!--</div>--->
+	   
+	   <!----<i class="fa fa-bars" onclick="showMenu()"></i>-->
+	   
+	   </nav>
+	   <h1>About  US</h1>
+	   </section>
+	   
+	   <!-------- about us content---->
+	   
+	   <section class="  ">
+	   
+	    <div class="row">
+		<div class="about-col">
+		<h1>The Gentles Group Of Companies</h1>
+		 <p>The Gentle Group of Companies is a diversified conglomerate with interests in various <br> sectors,
+including manufacturing, logistics, education, and real estate. </br>
+<h4>Mission</h4
+ <p> 
+ <p>We are committed to excellence, innovation, and customer satisfaction, 
+and we strive to build long-term relationships
+ with our customers and partners.</br></p>
+<h4>Vission</h4>
+<p>We aim to be a leader in our industry and to make a positive impact 
+on our community and the environment.</p>
+ 
+<a href="" class="hero-btn red-btn ">Explore Now</a>
+		</div>
+		<div class="about-col">
+		<img src="Images/art.png">
+		</div>
+		<div class="about-col">
+		<img src="Images/CEO.jpg">
+		<a href="" class="hero-btn red-btn ">CEO of The Gentles<br> Group of Companies</a></br>
+		<div class="row">
+		
+	 </div>
+	 
+		</div>
+	
+	   <div class="about-col">
+	   <div>
+	   <img src="Images/PA.jpg">
+		<a href="" class="hero-btn red-btn ">P.A of The Gentles<br> Group of Companies</a></br>
+	   </div>
+	   </div>
+	   
+	    
+	   </section>
+	 
+
+
+
+<!------ Footer---->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Gentle Group of Companies is a diversified conglomerate
+ <br>with interests in various sectors, including manufacturing,<br> 
+ logistics, education, and real estate.</p>
+
+<div class="icons">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-linkedIn"></i>
+</div>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+	   
+	   
+	   
+	 <!--------javascript for toggle menu------->
+	   
+	<script>   
+	      /*var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+		  navLinks.style.right="0px";  
+		  }
+	
+	function hideMenu(){
+		  navLinks.style.right="-200";  
+		  }*/
+		  
+		  	  // Toggle Menu Function
+function toggleMenu() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.toggle('toggle');
+}
+
+	</script>
+	   
+	   <script>
+	   
+	   // Get the chat input and send button elements
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+
+// Get the chat messages container
+const chatMessages = document.querySelector('.chat-messages');
+
+// Add an event listener to the send button
+sendButton.addEventListener('click', () => {
+  // Get the user's message
+  const message = chatInput.value.trim();
+  
+  // Check if the message is not empty
+  if (message !== '') {
+    // Create a new message element
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+
+    // Create a new username element
+    const usernameElement = document.createElement('span');
+    usernameElement.classList.add('username');
+    usernameElement.textContent = 'You';
+
+    // Create a new message text element
+    const messageTextElement = document.createElement('span');
+    messageTextElement.classList.add('message-text');
+    messageTextElement.textContent = message;
+
+    // Append the username and message text elements to the message element
+    messageElement.appendChild(usernameElement);
+    messageElement.appendChild(messageTextElement);
+
+    // Append the message element to the chat messages container
+    chatMessages.appendChild(messageElement);
+    // Clear the chat input field
+    chatInput.value = '';
+
+    // Scroll to the bottom of the chat messages container
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+});
+
+
+
+	   
+	   
+	   </script>
+	
+	   
+	    
+	   
+</body>
+</html>
+
